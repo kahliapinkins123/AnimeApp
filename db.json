@@ -5,42 +5,48 @@
         "title": "Death Note",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Ag0T9Ix63qBeMdriZ_8kzPlYm1sYEu6jkQ&usqp=CAU",
         "characters": "Light Yagami, L, Misa Amane, Ryuk",
-        "charImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZY5UXBJhd8k9iNrNI51W_ryet1P-swL4B-Q&usqp=CAU"
+        "charImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZY5UXBJhd8k9iNrNI51W_ryet1P-swL4B-Q&usqp=CAU",
+        "rating": 8.6
       },
       {
         "id": 2,
         "title": "HunterxHunter",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgJoSCM83cLWmEyfBumw_tkJBSQbdoPBUSJw&usqp=CAU",
         "characters": "Gon Freecs, Killua Zoldyck, Kurapika, Leorio, Hisoka",
-        "charImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDzkToXVQMWRVmvJASF0WJ8btyBex7-obnmg&usqp=CAU"
+        "charImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDzkToXVQMWRVmvJASF0WJ8btyBex7-obnmg&usqp=CAU",
+        "rating": 9.2
       },
       {
         "id": 3,
         "title": "Attack on Titan",
         "image": "https://m.media-amazon.com/images/M/MV5BMzQwZjZkMTktYzNkNC00ZWFlLWE4NGEtMjA3YTA4OTEyZWVkXkEyXkFqcGdeQXVyMTA5MTI0Mzc1._V1_.jpg",
         "characters": "Eren Jaegar, Mikasa Ackerman, Armin Arlert, Levi, Reiner Braun",
-        "charImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLxVwVpAt7eP1qA3dinx1pmgm4EsNK_bQgnA&usqp=CAU"
+        "charImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLxVwVpAt7eP1qA3dinx1pmgm4EsNK_bQgnA&usqp=CAU",
+        "rating": 9.6
       },
       {
         "id": 4,
         "title": "Demon Slayer",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc66esx0vaUmMrlupotDQJegDD2h-NQCKEwQ&usqp=CAU",
         "characters": "Tanjiro Kamado, Nezuko Kamado, Zenitsu Agatsuma, Kanao Tsuyuri",
-        "charImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBYfxc9Pf659Geen2XwekTboWSpzcdBk3vFg&usqp=CAU"
+        "charImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBYfxc9Pf659Geen2XwekTboWSpzcdBk3vFg&usqp=CAU",
+        "rating": 8.8
       },
       {
         "id": 5,
         "title": "Full Metal Alchemist Brotherhood",
-        "image": "https://m.media-amazon.com/images/M/MV5BMzQwZjZkMTktYzNkNC00ZWFlLWE4NGEtMjA3YTA4OTEyZWVkXkEyXkFqcGdeQXVyMTA5MTI0Mzc1._V1_.jpg",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWKkYzpJ2Wx4tx22lTiNeMwScvuMzxUs6FFg&usqp=CAU",
         "characters": "Edward Elric, Alphonse Elric, Roy Mustang, Maes Hughes",
-        "charImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROaFPxZ5_DgHlQRHKR1YZrh0r62UnFirSO3g&usqp=CAU"
+        "charImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROaFPxZ5_DgHlQRHKR1YZrh0r62UnFirSO3g&usqp=CAU",
+        "rating": 9.1
       },
       {
         "id": 6,
         "title": "My Hero Academia",
         "image": "https://upload.wikimedia.org/wikipedia/en/5/5a/Boku_no_Hero_Academia_Volume_1.png",
         "characters": "Izuko Midoria, All Might, Katsuki Bakugo, Shoto Todoroki",
-        "charImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJxZHB47Q5tHwikj4nYCru2vSv_-pqxsu3gg&usqp=CAU"
+        "charImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJxZHB47Q5tHwikj4nYCru2vSv_-pqxsu3gg&usqp=CAU",
+        "rating": 8.5
       }
     ]
   }
