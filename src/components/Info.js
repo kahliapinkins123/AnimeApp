@@ -3,9 +3,10 @@ import React from "react";
 function Info({ anime }){
     return (
     <div>
-        <h3>Main Characters: <p>{anime.characters}</p></h3>
+        <h3>Main Characters: </h3>
+        <h4><i>{anime.characters}</i></h4>
         <img src={anime.charImg}/>
-        <h4>Blurb (to be added to json)</h4>
+        <p>{anime.about}</p>
     </div>)
 }
 
