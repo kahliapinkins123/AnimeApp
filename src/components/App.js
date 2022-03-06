@@ -26,6 +26,10 @@ function App() {
     }
   }
 
+  function addAnime(newAnime){
+    setAnimes([...animes, newAnime])
+  }
+
   const animeList = sortedList().filter((anime)=>{
     return anime.title.toLowerCase().includes(input.toLowerCase())
    })
@@ -34,7 +38,7 @@ function App() {
     <div className="App">
       <h1>Animes</h1>
       <NavBar/>
-      <AnimeForm/>
+      <AnimeForm addAnime={addAnime}/>
       <Search input={input} setInput={setInput}/>
       <Filter animes={animeList} setSortBy={setSortBy} sortBy={sortBy}/>
       <Container animes={animeList} />
