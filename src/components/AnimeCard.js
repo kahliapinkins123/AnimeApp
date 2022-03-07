@@ -13,21 +13,24 @@ function AnimeCard({ anime, onFavorited, removeFavorite, hasBtn }){
             removeFavorite(anime);
         }
         setFavorited(()=>!favorited);
-        
+
     }
 
     const moreInfo = info ? <Info anime={anime}/> : null;
-    const favoritedText = favorited ? 'Favorited!' : 'Favorite';
-    const faveBtn = hasBtn ? <button onClick={handleFavorited}>{favoritedText}</button> : null;
+    const favoritedText = favorited ? '❤️ FAVE' : '🤍 Favorite';
+    const faveBtn = hasBtn ? <button className='card-btn' onClick={handleFavorited}>{favoritedText}</button> : null;
 
 
     return(
-        <div>
+        <div className="card centered-div" >
             <h2>{anime.title}</h2>
-            <img src={anime.image}/>
-            {faveBtn}         
-            <button onClick={()=>setInfo(!info)}>More Info...</button>
-            <div>{moreInfo}</div>
+            <img className='card-img' src={anime.image} alt={anime.title}/>
+            <div>
+                {faveBtn}       
+                <button className='card-btn' onClick={()=>setInfo(!info)}>More Info...</button>
+                <div>{moreInfo}</div>
+                
+            </div>
         </div>
     )
 

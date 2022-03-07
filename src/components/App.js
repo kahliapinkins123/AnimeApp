@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import Search from './Search';
 import AnimeForm from './AnimeForm';
 import NavBar from './NavBar';
@@ -8,7 +9,10 @@ import Container from './Container';
 function App() {
   const [animes, setAnimes] = useState([]);
   const [sortBy, setSortBy] = useState('');
-  const [input, setInput] = useState('')
+  const [input, setInput] = useState('');
+  const [search, setSearch] = useState(false);
+
+  console.log('rerendered')
 
   useEffect(()=>{
     fetch('http://localhost:3000/animes')
@@ -30,18 +34,27 @@ function App() {
     setAnimes([...animes, newAnime])
   }
 
+  const showSearchBar = search ? <Search input={input} setInput={setInput}/> : null;
+
   const animeList = sortedList().filter((anime)=>{
     return anime.title.toLowerCase().includes(input.toLowerCase())
    })
 
   return (
     <div className="App">
+      <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6D4-ttx0ncQMAZZDOpAjbgw-wAE7A90ZWFg&usqp=CAU'/>
       <h1>Animes</h1>
-      <NavBar/>
-      <AnimeForm addAnime={addAnime}/>
-      <Search input={input} setInput={setInput}/>
-      <Filter animes={animeList} setSortBy={setSortBy} sortBy={sortBy}/>
-      <Container animes={animeList} />
+      <NavBar search={search} setSearch={setSearch}/>
+      <Switch>
+        <Route exact path='/submit'>
+          <AnimeForm addAnime={addAnime}/>
+        </Route>
+        <Route exact path='/*'>
+          {showSearchBar}
+          <Filter animes={animeList} setSortBy={setSortBy} sortBy={sortBy}/>
+          <Container animes={animeList} />
+        </Route>
+      </Switch>
     </div>
   );
 }

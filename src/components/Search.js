@@ -6,9 +6,10 @@ function Search({ input, setInput}){
         setInput(e.target.value);
     }
 
-
     return(
-        <input type="text" placeholder="Search..." value={input} onChange={handleChange}></input>
+        <div className='centered-div'>
+            <input className="search" type="text" placeholder="Search..." value={input} onChange={handleChange}></input>
+        </div>
     )
 }
 

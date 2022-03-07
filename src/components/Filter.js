@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function Filter({ setSortBy, sortBy }){
     
@@ -12,19 +12,21 @@ function Filter({ setSortBy, sortBy }){
 
     return(
         <div>
-            <strong>Sort:</strong>
+            <strong>SORT BY:</strong>
             <label>
                 <input
+                className='sort-box'
                 type="radio"
                 value="Alphabetically"
                 name="sort"
                 checked={sortBy === "Alphabet"}
                 onChange={handleAlphabet}
                 />
-                Alphabetically
+                Alphabet
             </label>
             <label>
                 <input
+                className='sort-box'
                 type="radio"
                 value="Rating"
                 name="sort"

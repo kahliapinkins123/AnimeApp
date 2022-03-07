@@ -6,8 +6,8 @@ function Favorites({ favorites, onFavorited, removeFavorite }){
         return <AnimeCard key= {anime.id} anime={anime} onFavorited={onFavorited} removeFavorite={removeFavorite} hasBtn={false}/>
     })
 
-    return(
-        <div>
+    return( 
+        <div id='favorites'>
             <h1>Favorites</h1>
             {favoritesList}
         </div>

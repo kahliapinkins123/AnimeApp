@@ -2,10 +2,10 @@ import React from "react";
 
 function Info({ anime }){
     return (
-    <div>
+    <div className="extra-info">
         <h3>Main Characters: </h3>
         <h4><i>{anime.characters}</i></h4>
-        <img src={anime.charImg}/>
+        <img className='char-img' src={anime.charImg} alt={anime.characters}/>
         <p>{anime.about}</p>
     </div>)
 }
