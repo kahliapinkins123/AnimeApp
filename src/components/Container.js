@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import Favorites from './Favorites';
 import AnimeList from './AnimeList';
 
 
-function Container({ animes }){
-    const [favorites, setFavorites] = useState([]);
+function Container({ animes, favorites, setFavorites }){
 
     console.log(favorites)
     
@@ -23,8 +23,14 @@ function Container({ animes }){
 
     return (
         <div className="container centered-div">
-            <AnimeList animes={animes} onFavorited={onFavorited} removeFavorite={removeFavorite} />
-            <Favorites favorites={favorites} onFavorited={onFavorited} removeFavorite={removeFavorite}/>
+            <Switch>
+                <Route exact path='/'>
+                    <AnimeList animes={animes} onFavorited={onFavorited} removeFavorite={removeFavorite} favorites={favorites}/>
+                </Route>
+                <Route exact path='/favorites'>
+                    <Favorites favorites={favorites} onFavorited={onFavorited} removeFavorite={removeFavorite}/>
+                </Route>    
+            </Switch>
         </div>
        
     )

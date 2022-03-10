@@ -11,6 +11,7 @@ function App() {
   const [sortBy, setSortBy] = useState('');
   const [input, setInput] = useState('');
   const [search, setSearch] = useState(false);
+  const [favorites, setFavorites] = useState([]);
 
   console.log('rerendered')
 
@@ -38,12 +39,12 @@ function App() {
 
   const animeList = sortedList().filter((anime)=>{
     return anime.title.toLowerCase().includes(input.toLowerCase())
-   })
+   }) 
 
   return (
-    <div className="App">
-      <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6D4-ttx0ncQMAZZDOpAjbgw-wAE7A90ZWFg&usqp=CAU'/>
-      <h1>Animes</h1>
+    <div className="App" >
+      <img id='top-img' src='https://wallpaperaccess.com/full/6563049.jpg'/>
+      <h1>ANIME NOOK</h1>
       <NavBar search={search} setSearch={setSearch}/>
       <Switch>
         <Route exact path='/submit'>
@@ -52,7 +53,7 @@ function App() {
         <Route exact path='/*'>
           {showSearchBar}
           <Filter animes={animeList} setSortBy={setSortBy} sortBy={sortBy}/>
-          <Container animes={animeList} />
+          <Container animes={animeList} favorites={favorites} setFavorites={setFavorites}/>
         </Route>
       </Switch>
     </div>

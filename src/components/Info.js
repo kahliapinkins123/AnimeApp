@@ -7,6 +7,7 @@ function Info({ anime }){
         <h4><i>{anime.characters}</i></h4>
         <img className='char-img' src={anime.charImg} alt={anime.characters}/>
         <p>{anime.about}</p>
+        <p><i>Rating: {anime.rating}</i></p>
     </div>)
 }
 

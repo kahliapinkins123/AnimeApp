@@ -2,22 +2,20 @@ import React, { useState } from "react";
 import Info from "./Info";
 
 
-function AnimeCard({ anime, onFavorited, removeFavorite, hasBtn }){
+function AnimeCard({ anime, onFavorited, removeFavorite, hasBtn, foundFavorite }){
     const [info, setInfo] = useState(false);
-    const [favorited, setFavorited] = useState(false);
 
     function handleFavorited(){
-        if(favorited === false){
+        if(foundFavorite === false){
             onFavorited(anime);
         } else{
             removeFavorite(anime);
         }
-        setFavorited(()=>!favorited);
 
     }
 
     const moreInfo = info ? <Info anime={anime}/> : null;
-    const favoritedText = favorited ? '❤️ FAVE' : '🤍 Favorite';
+    const favoritedText = foundFavorite ? '❤️ FAVE' : '🤍 Favorite';
     const faveBtn = hasBtn ? <button className='card-btn' onClick={handleFavorited}>{favoritedText}</button> : null;
 
 
