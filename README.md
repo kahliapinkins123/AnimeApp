@@ -31,15 +31,7 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -49,10 +41,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Anime Nook][anime-nook]](https://i.imgur.com/0mrPjtw.png)
+[![Anime Nook][anime-nook]](https://i.imgur.com/D3rjBFt.png)
 
 
-This is an application built witth React that displays Anime Title Cards. It implements several funtions from React, most notably State, UseEffect, and Client Side Routing. Through the use of several components, I've created a user friendly and dynamic app with react. This application also includes a backend db.json that I created in order to work with fetch requests in my application.
+This is an application built with React that displays Anime Title Cards. It implements several funtions from React, most notably State, UseEffect, and Client Side Routing. Through the use of several components, I've created a user friendly and dynamic app with react. This application also includes a backend db.json that I created in order to work with fetch requests in my application.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -68,7 +60,7 @@ This is an application built witth React that displays Anime Title Cards. It imp
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-This project has several functions: 
+This project has several functions all implemented with React: 
     <ol>
         <li>Search animes</li>
         <li>Like and Unlike an anime</li>
@@ -95,7 +87,7 @@ Project Link: [https://github.com/kahliapinkins123/AnimeApp](https://github.com/
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-These are my sources for the photos!
+These are my sources!
 
 * [Deathnote](https://wall.alphacoders.com/by_sub_category.php?id=172992&name=Death+Note+Wallpapers)
 * [HunterXHunter](https://wall.alphacoders.com/by_sub_category.php?id=177860&name=Hunter+x+Hunter+Wallpapers)
@@ -115,4 +107,4 @@ These are my sources for the photos!
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/kahlia-pinkins-616599207/
-[anime-nook]: https://i.imgur.com/0mrPjtw.png
+[anime-nook]: https://i.imgur.com/D3rjBFt.png
