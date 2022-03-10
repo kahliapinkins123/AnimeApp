@@ -49,7 +49,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[Anime Nook](https://imgur.com/0mrPjtw)
+[![Anime Nook][anime-nook]](https://i.imgur.com/0mrPjtw.png)
+
 
 This is an application built witth React that displays Anime Title Cards. It implements several funtions from React, most notably State, UseEffect, and Client Side Routing. Through the use of several components, I've created a user friendly and dynamic app with react. This application also includes a backend db.json that I created in order to work with fetch requests in my application.
 
@@ -114,3 +115,4 @@ These are my sources for the photos!
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/kahlia-pinkins-616599207/
+[anime-nook]: https://i.imgur.com/0mrPjtw.png
